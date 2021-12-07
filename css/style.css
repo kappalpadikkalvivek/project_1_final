@@ -4,8 +4,6 @@
 body, html{
     height: 100%;
     background-color: #f6f6f6;
-
-
     margin: 0;
     padding: 0;
 }
@@ -45,7 +43,7 @@ h1,h2,h3{
     line-height: 78px;
 }
 
-/*                              Utility                      */
+/*   Utility */
 #container{
     margin:auto;
     max-width :1100px;
@@ -55,7 +53,7 @@ h1,h2,h3{
     text-align: center;
 }
 
-/*                               Navbar                     */
+/*  Navbar  */
 #navbar{
     color:white;
     background-color: #f6f6f6;
@@ -73,7 +71,6 @@ h1,h2,h3{
     line-height: 1px;
     padding: 30px 0px 25px  0px;
     margin: 0;
-
     box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.13);
 
 }
@@ -88,8 +85,6 @@ h1,h2,h3{
     margin-top: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
-
-
 }
 #navbar #logo {
     font-size: 35px;
@@ -137,7 +132,7 @@ h1,h2,h3{
 }
 /* Menu Bar */
 
-/*                              TEXT                                     */
+/*       TEXT        */
 .container_01{
     padding-right: 123px;
     max-width :1100px;
@@ -165,7 +160,7 @@ h1,h2,h3{
 
 
 
-/*                              Container Image                         */
+/*     Container Image     */
 
 .container_02{
     margin:auto;
@@ -174,7 +169,6 @@ h1,h2,h3{
     margin-top:150px;
     padding: 0;
     position: relative;
-    /* background-color: black; */
 }
 #float-image-1{
     position: absolute;
@@ -257,7 +251,7 @@ h1,h2,h3{
     }
 }
 
-/*                              Container 3                          */
+/*       Container 3   */
 .container_03{
     background-color: #042d36;
     width: 100%;
@@ -268,12 +262,10 @@ h1,h2,h3{
 #alpha{
     max-width: 900px;
     margin:auto;
-    /* max-width :900px; */
     height: auto;
     overflow:auto;
     padding: 0px ;
     text-align: left;
-    /* position:relative; */
     margin-top: 200px;
     color:#042d36;
 
@@ -291,8 +283,6 @@ h1,h2,h3{
     max-height:364px ;
     margin-left: 10px;
     margin-right: 10px;
-    /* margin-left:auto ;
-    margin-right: auto; */
 }
 
 .contsuper{
@@ -321,8 +311,7 @@ h1,h2,h3{
     color:#042d36;;transition: all .4s;
     background-color:#09728a;
     box-shadow: inset 0px 0px 40px -1px  #13acbb;;
-        transition: .3s ease-in-out;
-    /* background- */
+    transition: .3s ease-in-out;
 }
  .container_0311{
     float :left;
@@ -393,9 +382,6 @@ h1,h2,h3{
     .container332 {
         display: block;
         width: 100%;
-
-        /* margin-left: 330px;  */
-    /* max-height:364px ; */
     }
     .container_0311{
         width: 0%;
@@ -436,7 +422,7 @@ h1,h2,h3{
     }
   }
 
-/*                                  above    Above Footer                                     */
+/*      above    Above Footer     */
 #focus_area{
     color: white;
     margin-top:200px;
@@ -521,15 +507,10 @@ h1,h2,h3{
 .focus_01 img{
     width:250px;
     vertical-align: middle;
-
-    /* position: absolute!important; */
     box-sizing: border-box;
 
 
 }
-/* .hoveref{
-    position: relative;
-} */
 .line{position: absolute;
     height: 5px;
     width: 75px;
@@ -627,20 +608,17 @@ h1,h2,h3{
 }
 
 }
-/*                                  Image Above Footer                                       */
+/*   Image Above Footer   */
 .fuready{
     text-align: center;
     background-image: url(/images/Above\ Footer.jpg);
     filter: brightness(40%);
-    /* filter:contrast(200%); */
     background-position: center;
     padding: 10px 0px;
     width: 100%;
     align-items: center;
-    /* display: flex; */
     background-size: cover;
     box-sizing: border-box;
-    /* background-attachment: fixed; */
     background-repeat:no-repeat;
     height: 440px;
    position:absolute;
@@ -673,7 +651,7 @@ h1,h2,h3{
     line-height: 40px!important;
     }
 }
-/*                              Upper Footer                                   */
+/*   Upper Footer   */
 #footer-up{
     color:white;
     max-width: 900px;
@@ -688,9 +666,7 @@ h1,h2,h3{
     padding: 10px;
     height: auto;
     color: rgb(255, 255, 255);
-
     margin-bottom: 10px;
-   /* border-bottom:1px white solid;    */
 }
 .awe{padding-bottom:10px;
     border-bottom:1px white solid;
@@ -750,7 +726,7 @@ table td {
     width: 100%;
 }
 }
-/*                              Upper Footer                                   */
+/*    Upper Footer  */
 .container4{
     padding-bottom: 16px!important;
     padding-top: 16px!important;
@@ -831,10 +807,7 @@ max-width: 58.33333%;
 
 }
 .footer-right{
-
-
     padding-right: 0px!important;
-
     margin: 0;
     display: flex!important;
     font-size: 16px;

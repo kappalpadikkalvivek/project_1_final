@@ -14,113 +14,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;700&display=swap" rel="stylesheet">
     <title>Mayors Office of the Chief Technology Officer | Hame Page</title>
-    <script>
-    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("container").style.margin = "auto";
-        document.getElementById("container").style.padding = "0";
-        document.getElementById("navbar").style.padding  ="0";
-        document.getElementById("alia").style.padding ="0px ";
-        document.getElementById("logo").src="/images/LOGO_WHITE_AFTER.png"
-        document.getElementById("logo").style.width = "140px ";
-        document.getElementById("logo").style.height = "25px ";
-        } else {
-            document.getElementById("container").style.padding = "0";
-            document.getElementById("navbar").style.margin  =" 0";
-            document.getElementById("navbar").style.padding  ="30px 0px 25px  0px";
-            document.getElementById("alia").style.padding ="10px 0px 20px  0px";
-            document.getElementById("logo").style.width = "300px";
-            document.getElementById("logo").style.height = "50px ";
-            document.getElementById("logo").src="/images/LOGO_NYC_CTO.png"
-            }
-        }
-
-        // Script for terminal effect texts.
-        var TxtRotate = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 1;
-        this.period = parseInt(period, 8) || 100;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-        };
-
-        TxtRotate.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1 );
-        } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 100 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 4; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-            this.isDeleting = false;
-            this.loopNum++;
-            delta = 1000;
-        }
-
-        setTimeout(function() {
-            that.tick();
-        }, delta);
-        };
-
-        window.onload = function() {
-        var elements = document.getElementsByClassName('txt-rotate');
-        for (var i=0; i<(elements.length); i++) {
-            var toRotate = elements[i].getAttribute('data-rotate');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-            new TxtRotate(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #e1004b }";
-        document.body.appendChild(css);
-        };
-    
-    </script>
     <script src="https://kit.fontawesome.com/7a57f62cdf.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- header start -->
-    <header class="header"> 
-        <nav id="navbar">
-        <div id="container">
-            <a  href="index.html" >
-                <img id="logo" src="/images/LOGO_NYC_CTO.png" alt="LOGO">
-            </a>
-            <div title="Navigation Bar" id="navbar-right">
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                <ul class="list menu" id="alia">
-                    <li><a href="index.html">ABOUT</a></li>
-                    <li><a href="index.html">COLLABORATION</a></li>
-                    <li><a href="index.html">PROJECT</a></li>
-                    <li><a href="index.html">NEWS</a></li>
-                    <li><a href="index.html">CONTACT</a></li>
-                    <li><a href="index.html">JOBS</a></li>
-                </ul>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img class="img1" src="/images/LOGO_WHITE_AFTER.png" alt="">
+                    <img class="img2" src="/images/LOGO_NYC_CTO.png" alt="">
+                </a>
             </div>
-        </div>
-    </nav>
-    </header>
+            <ul class="nav-links">
+                <li><a href="#"><img id="close-burger" class="closeburger" src="/images/close-menu.c5f9b38a.svg" alt=""></a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">Collaboration</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">jobs</a></li>
+            </ul>
+            <div >
+                <a href="#"><img id="menu-burger" class="openburger" src="/images/menu-burger.2df49bd0.svg" alt=""></a>
+            </div>
+        </nav>
+    </header> 
     <!-- header end -->
     <!-- terminal effect on text -->
     <div class="container_01">
@@ -176,7 +95,7 @@
                     <div class="hoveref">
                         
                             <a class="left" href="">
-                                <div class="line"></div>
+                            <div class="line"></div>
                             <h3 class="t1">UNIVERSAL BROADBRAND</h3>
                             <p class="t2">Ensuring high-quality, affordable, and safe internet service for all New Yorkers. <span class="arrow"></span> </p>
                             </a>
@@ -294,7 +213,7 @@
                     <footer>
                         <div class="container4">
                             <div class="footer-left">
-                                <img src="./images/White Footer Logo.png" alt="Logo" style="width:300px">
+                                <img src="./images/download.png" alt="Logo" style="width:300px">
                                 <div class="tmr">© 2021 The City of New York</div>
                                 <ul class="list2">
                                     <li><a class="list-text" href="#">CTO Accessibility Statement</a></li>
@@ -335,7 +254,7 @@
                 </div>
             </div>
     </div>
-
+    <script src="/js/script.js"></script>
    </body>
 </html>
 
